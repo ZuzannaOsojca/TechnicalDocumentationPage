@@ -1,0 +1,75 @@
+header{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    padding: 20px;
+    
+
+}
+*{
+    font-family: 'Playfair Display', serif;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    padding-left: 250px; /* Sidebar width + additional space */
+}
+
+nav {
+    background-color: rgb(0, 170, 255); /* Background color of the navigation bar */
+    height: 100%; /* 100% of the parent height */
+    width: 230px; /* Set the width of your sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    flex-grow: 1; /* Grow to fill the available space */
+    text-align: center;
+}
+
+.sidebar li {
+    margin-bottom: 10px; /* Adjust spacing between sidebar links */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.JS_Documentation{
+    font-size: larger;
+    font-style: bold;
+    font-family: 'Playfair Display', serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static; /* Remove fixed positioning */
+        color: red;
+    }
+}
+
+code{
+    font-family: 'Courier New', monospace;
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
